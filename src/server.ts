@@ -16,7 +16,7 @@ dotenv.config();
   server.use(mainRoutes);
 
   server.use((req, res)=>{
-    res.send('Página não encontrado!');
+    res.send('pages/erro404');
   });
 
   server.listen(process.env.PORT);
